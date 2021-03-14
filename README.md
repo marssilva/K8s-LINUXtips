@@ -68,6 +68,23 @@
         > kubeadm token create --print-join-command    
 
 
+### Comandos básicos
+
+    > kubectl create namespace course
+    > kubectl config set-context --current --namespace=course # Mudando o namespace padrão
+    > kubectl -n course run nginx --image=nginx # de forma simples
+    > kubectl -n course run nginx --image=nginx --dry-run=client -o yaml > teste.yaml # Criando e redirecionando para um arquivo 
+    > kubectl -n course apply  -f teste.yaml # pega a saída do comando acima e cria a pod
+    > kubectl get pods,services # List com sequêncial de serviços
+
+## Context do usuário 
+
+    > kubectl config get-contexts
+    > kubectl config use-context kubernetes-admin@kubernetes --kubeconfig=${HOME}/.kube/config
+
+## Manpage do kubernetes 
+
+> kubectl explain services # Explica o que seria o sub comando services
 
 
 
