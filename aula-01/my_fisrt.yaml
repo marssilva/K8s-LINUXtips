@@ -11,5 +11,7 @@ spec:
     imagePullPolicy: Always
     name: nginx
     resources: {}
+    ports:
+    - containerPort: 80
   dnsPolicy: ClusterFirst
   restartPolicy: Always
