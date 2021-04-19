@@ -81,6 +81,7 @@
 
     > kubectl config get-contexts
     > kubectl config use-context kubernetes-admin@kubernetes --kubeconfig=${HOME}/.kube/config
+    > kubectl cluster-info --context kubernetes-admin@kubernetes # Contexto do Cluster
 
 ## Manpage do kubernetes 
 

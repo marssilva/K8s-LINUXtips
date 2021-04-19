@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: limit-pod
+  namespace: testelimit
+spec:
+  containers:
+  - name: my-container
+    image: nginx  
